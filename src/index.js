@@ -9,7 +9,9 @@ import App from './components/App';
 router.get('/', (req, res) => {
   let dataObj = [];
   const ARCHIVE_ID = appData.get("archive");
-  const API_URL = `https://utb-dev13.sitevision.se/rest-api/1/1/${ARCHIVE_ID}/nodes`;
+  const BASE_URI = appData.get("archive", "URI");
+  const BASE_URL = appData.get("archive", "URL").replace(BASE_URI, "");
+  const API_URL = `${BASE_URL}/rest-api/1/1/${ARCHIVE_ID}/nodes`;
   const quantity = parseInt(appData.get("quantity"));
   
   requester
