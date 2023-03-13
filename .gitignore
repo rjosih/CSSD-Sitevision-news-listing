@@ -2,3 +2,4 @@ node_modules
 .dev_properties.json
 build
 package-lock.json
+dist
