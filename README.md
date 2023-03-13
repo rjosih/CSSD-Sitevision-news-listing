@@ -1,5 +1,3 @@
-# webapp-boilerplate
-
 ## Get started 
 - Create a file called `.dev_properties.json`in the root. Add following data: 
    
